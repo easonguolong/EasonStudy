@@ -1,0 +1,2 @@
+include ':app', ':vollerystudy', ':retrofitstudy', ':eventbusstudy', ':scroll_listview', ':recyclestudy', ':images', ':myanimation', ':myble', ':DataBinding', ':DataBinding', ':rydmqtt', ':udpstudy', ':rxpermisssions', ':rxjava', ':easonusb', ':usblibrary', ':retrofit_gson', ':recycle_adapter', ':paymentstudy', ':pictureVerfy', ':easonmap', ':easonmvp', 'usbSerialForAndroid', ':captcha'
+

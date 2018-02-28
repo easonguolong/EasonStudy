@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false">
+
+    <!-- from表示从哪里开始移动
+to表示移动到那里
+100%表示移动到自己的右下角
+100%p表示移动到屏幕右下角
+ -->
+    <translate
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="100%"
+        android:toYDelta="100%" />
+
+</set>

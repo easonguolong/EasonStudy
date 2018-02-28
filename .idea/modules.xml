@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DataBinding/DataBinding.iml" filepath="$PROJECT_DIR$/DataBinding/DataBinding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EasonStudy.iml" filepath="$PROJECT_DIR$/EasonStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/captcha/captcha.iml" filepath="$PROJECT_DIR$/captcha/captcha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easonmap/easonmap.iml" filepath="$PROJECT_DIR$/easonmap/easonmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easonmvp/easonmvp.iml" filepath="$PROJECT_DIR$/easonmvp/easonmvp.iml" />
+      <module fileurl="file://E:\study\EasonStudy\easontestlibrary\easontestlibrary.iml" filepath="E:\study\EasonStudy\easontestlibrary\easontestlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easonusb/easonusb.iml" filepath="$PROJECT_DIR$/easonusb/easonusb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventbusstudy/eventbusstudy.iml" filepath="$PROJECT_DIR$/eventbusstudy/eventbusstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/images/images.iml" filepath="$PROJECT_DIR$/images/images.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myanimation/myanimation.iml" filepath="$PROJECT_DIR$/myanimation/myanimation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myble/myble.iml" filepath="$PROJECT_DIR$/myble/myble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paymentstudy/paymentstudy.iml" filepath="$PROJECT_DIR$/paymentstudy/paymentstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pictureVerfy/pictureVerfy.iml" filepath="$PROJECT_DIR$/pictureVerfy/pictureVerfy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recycle_adapter/recycle_adapter.iml" filepath="$PROJECT_DIR$/recycle_adapter/recycle_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclestudy/recyclestudy.iml" filepath="$PROJECT_DIR$/recyclestudy/recyclestudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit_gson/retrofit_gson.iml" filepath="$PROJECT_DIR$/retrofit_gson/retrofit_gson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofitstudy/retrofitstudy.iml" filepath="$PROJECT_DIR$/retrofitstudy/retrofitstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava/rxjava.iml" filepath="$PROJECT_DIR$/rxjava/rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxpermisssions/rxpermisssions.iml" filepath="$PROJECT_DIR$/rxpermisssions/rxpermisssions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rydmqtt/rydmqtt.iml" filepath="$PROJECT_DIR$/rydmqtt/rydmqtt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scroll_listview/scroll_listview.iml" filepath="$PROJECT_DIR$/scroll_listview/scroll_listview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udpstudy/udpstudy.iml" filepath="$PROJECT_DIR$/udpstudy/udpstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbSerialForAndroid/usbSerialForAndroid.iml" filepath="$PROJECT_DIR$/usbSerialForAndroid/usbSerialForAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usblibrary/usblibrary.iml" filepath="$PROJECT_DIR$/usblibrary/usblibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vollerystudy/vollerystudy.iml" filepath="$PROJECT_DIR$/vollerystudy/vollerystudy.iml" />
+    </modules>
+  </component>
+</project>

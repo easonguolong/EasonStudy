@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false">
+
+    <!-- fromDegrees表示开始的角度
+  toDegrees结束的角度,180表示旋转半圈
+  两个100%表示基于自己的右下角旋转
+  想让倒着转，把180改为-180即可
+   -->
+    <rotate
+        android:duration="1000"
+        android:fromDegrees="0"
+        android:pivotX="100%"
+        android:pivotY="100%"
+        android:toDegrees="180" />
+
+</set>

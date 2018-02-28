@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcyView_imageSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout"/>
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:alpha="0.5"
+    android:background="#000000"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_imageDir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="全部图片"
+        android:layout_gravity="center"
+        android:textColor="#ffe1ef"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_imageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="3张"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffe1ef"
+        android:textSize="20sp"
+        android:layout_marginRight="16dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eason.myanimation.MainActivity">
+
+    <Button
+        android:id="@+id/btn_move"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="可移动"/>
+
+    <Button
+        android:id="@+id/btn_tween"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tween动画"/>
+
+    <Button
+        android:id="@+id/btn_fram"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Fram帧动画可省"/>
+
+    <Button
+        android:id="@+id/btn_property"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="property动画"/>
+
+</LinearLayout>

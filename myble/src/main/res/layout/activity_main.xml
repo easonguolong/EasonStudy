@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eason.myble.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ble_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启蓝牙"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ble_close"
+        android:text="关闭蓝牙"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描设备"
+        android:id="@+id/scan"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ble_info" />
+
+
+
+    <ListView
+        android:id="@+id/blelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/layout_device_list">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false">
+
+
+    <!--
+ 两个1表示开始时图像大小不变，两个2表示图像放大一倍，
+ 如果小于1则表示图像缩小。两个0表示基于左上角进行放大
+ pivotX如果是50%，表示基于图像中心放大
+ pivotX如果是50%p，表示基于父级中心放大
+ infinite如它的英文意思，无限循环
+
+ -->
+    <scale
+        android:duration="1000"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="0"
+        android:pivotY="0"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:toXScale="2"
+        android:toYScale="2" />
+</set>

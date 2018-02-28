@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DataBinding" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/captcha" />
+            <option value="$PROJECT_DIR$/easonmap" />
+            <option value="$PROJECT_DIR$/easonmvp" />
+            <option value="$PROJECT_DIR$/easonusb" />
+            <option value="$PROJECT_DIR$/eventbusstudy" />
+            <option value="$PROJECT_DIR$/images" />
+            <option value="$PROJECT_DIR$/myanimation" />
+            <option value="$PROJECT_DIR$/myble" />
+            <option value="$PROJECT_DIR$/paymentstudy" />
+            <option value="$PROJECT_DIR$/pictureVerfy" />
+            <option value="$PROJECT_DIR$/recycle_adapter" />
+            <option value="$PROJECT_DIR$/recyclestudy" />
+            <option value="$PROJECT_DIR$/retrofit_gson" />
+            <option value="$PROJECT_DIR$/retrofitstudy" />
+            <option value="$PROJECT_DIR$/rxjava" />
+            <option value="$PROJECT_DIR$/rxpermisssions" />
+            <option value="$PROJECT_DIR$/rydmqtt" />
+            <option value="$PROJECT_DIR$/scroll_listview" />
+            <option value="$PROJECT_DIR$/udpstudy" />
+            <option value="$PROJECT_DIR$/usbSerialForAndroid" />
+            <option value="$PROJECT_DIR$/usblibrary" />
+            <option value="$PROJECT_DIR$/vollerystudy" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
