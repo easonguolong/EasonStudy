@@ -60,8 +60,24 @@ public class MainActivity extends Activity {
         this.context = this;
         initView();
         initLocation();
-        int badgeCount = 88;
-        ShortcutBadger.applyCount(context, badgeCount); //for 1.1.4+   //设置桌面图标消息通知数字
+
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                int badgeCount = 88;
+                ShortcutBadger.applyCount(context, badgeCount); //for 1.1.4+   //设置桌面图标消息通知数字
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                badgeCount = 8;
+                ShortcutBadger.removeCount(context);
+                //ShortcutBadger.applyCount(context, badgeCount); //for 1.1.4+   //设置桌面图标消息通知数字
+            }
+        }.start();
+
     }
 
     private void initView() {

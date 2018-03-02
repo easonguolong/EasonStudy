@@ -17,6 +17,8 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.eason.myble.ConnActivity;
+
 import java.util.UUID;
 
 /**
@@ -221,6 +223,7 @@ public class BleService extends Service {
     }
 
     public void writeData(byte[] data){
+        //String str = ConnActivity.bytesToHexString(data);
         if (mWriteCharacteristic!=null &&data!=null){
             mWriteCharacteristic.setValue(data[0],BluetoothGattCharacteristic.FORMAT_UINT8,0);
             mWriteCharacteristic.setValue(data);

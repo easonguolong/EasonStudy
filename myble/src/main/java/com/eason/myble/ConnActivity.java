@@ -60,7 +60,8 @@ public class ConnActivity extends AppCompatActivity {
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendData = sendtv.getText().toString().getBytes();
+                //sendData = sendtv.getText().toString().getBytes();
+                sendData = stringToBytes(getHexString());
                 if (sendData.length > 0) {
                     sendIndex = 0;    //发送数据的下标
                     sendDatalength = sendData.length;   //发送数据的总长度
@@ -79,6 +80,37 @@ public class ConnActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * 字符串转化成为16进制字符串
+     * @param s
+     * @return
+     */
+    public static String strTo16(String s) {
+        String str = "";
+        for (int i = 0; i < s.length(); i++) {
+            int ch = (int) s.charAt(i);
+            String s4 = Integer.toHexString(ch);
+            str = str + s4;
+        }
+        return str;
+    }
+    //获取输入框十六进制格式
+    private String getHexString() {
+        String s = sendtv.getText().toString();
+       return strTo16(s);
+    }
+
+    private byte[] stringToBytes(String s) {
+        byte[] buf = new byte[s.length() / 2];
+        for (int i = 0; i < buf.length; i++) {
+            try {
+                buf[i] = (byte) Integer.parseInt(s.substring(i * 2, i * 2 + 2), 16);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+        }
+        return buf;
+    }
 
     public void sendData(){
         if (sendDatalength>20){            //BLE限制不能超过20字节 , 则分包发送
@@ -88,6 +120,11 @@ public class ConnActivity extends AppCompatActivity {
             }
             sendIndex+=20;
             bleService.writeData(buf);
+            try {
+                Thread.sleep(60);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             sendDatalength-=20;
         }else{
             final byte[] buf = new byte[sendDatalength];
@@ -219,4 +256,39 @@ public class ConnActivity extends AppCompatActivity {
         }
         return sb.toString();
     }
+
+    /**
+     * 将byte[] 转为十六进制
+     */
+    public static String bytesToHexString(byte[] src) {
+        StringBuilder stringBuilder = new StringBuilder("");
+        if (src == null || src.length <= 0) {
+            return null;
+        }
+        for (int i = 0; i < src.length; i++) {
+            int v = src[i] & 0xFF;
+            String hv = Integer.toHexString(v);
+            if (hv.length() < 2) {
+                stringBuilder.append(0);
+            }
+            stringBuilder.append(hv);
+        }
+        return stringBuilder.toString();
+    }
+
+    public  byte[] hexStringToBytes(String hexString) {
+        if (hexString == null || hexString.equals("")) {
+            return null;
+        }
+        hexString = hexString.toUpperCase();
+        int length = hexString.length() / 2;
+        char[] hexChars = hexString.toCharArray();
+        byte[] d = new byte[length];
+        for (int i = 0; i < length; i++) {
+            int pos = i * 2;
+            d[i] = (byte) ((byte) "0123456789ABCDEF".indexOf(hexChars[pos]) << 4 | (byte) "0123456789ABCDEF".indexOf(hexChars[pos + 1]));
+        }
+        return d;
+    }
+
 }

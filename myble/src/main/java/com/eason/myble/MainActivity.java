@@ -156,10 +156,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ActivityCompat.requestPermissions(this ,new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},1);
             return;
         }
+
         if (!bluetoothAdapter.isEnabled()){
             Intent enableBle = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableBle,1);
+        }else{
+            Toast.makeText(this,"蓝牙已开启", Toast.LENGTH_LONG).show();
+            return;
         }
+
     }
 
     class DeviceAdapter extends BaseAdapter {
